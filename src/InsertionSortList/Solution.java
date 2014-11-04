@@ -13,7 +13,7 @@ public class Solution {
 
         while (head != null){
             ListNode index = newList;
-            if (head.val > index.val){
+            if (head.val < index.val){
                 ListNode n = head;
                 head = head.next;
                 n.next = newList;
@@ -29,7 +29,7 @@ public class Solution {
                     head = head.next;
                     break;
                 }
-                if (head.val > index.next.val){
+                if (head.val < index.next.val){
                     ListNode listNode = index.next;
                     index.next = head;
                     head = head.next;
@@ -71,7 +71,7 @@ public class Solution {
 
     public static void main(String a[]) throws CloneNotSupportedException {
         Solution s = new Solution();
-        ListNode l = s.insertionSortList(s.create(new int[]{4, 2, 3, 5, 4}));
+        ListNode l = s.insertionSortList(s.create(new int[]{}));
         s.print(l);
     }
 }
