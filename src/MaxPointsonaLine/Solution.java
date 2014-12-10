@@ -18,7 +18,6 @@ import java.util.Map;
  *
  * Created by xijueyp on 14-11-2.
  */
-// todo 还没解决
 public class Solution {
     public int maxPoints(Point[] points) {
             System.setProperty("java.util.Arrays.useLegacyMergeSort", "true");
