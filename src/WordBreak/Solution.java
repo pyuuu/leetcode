@@ -3,7 +3,6 @@ package WordBreak;
 import java.util.*;
 
 /**
- * todo
  * Created by xijueyp on 14-12-10.
  *
  * https://oj.leetcode.com/problems/word-break/
@@ -40,5 +39,9 @@ public class Solution {
             }
         }
         return res[s.length()];
+    }
+
+    public static void main(String a[]){
+
     }
 }
